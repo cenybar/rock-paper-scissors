@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Piedra Papel o Tijera</title>
+</head>
+<body>
+  <script>
+ 	// Your JavaScript goes here!
+    var readable = {
+        '0': 'rock',
+        '1': 'paper',
+        '2': 'scissors'
+    }
+    var computerPlay = {
+        init: function(){
+            this.store = Math.floor(Math.random() *3);
+            this.text = readable[this.store];
+    },
+        store:"",
+        text: ""
+    };
+    computerPlay.init()
+    console.log('computerSelection:', computerPlay.store, computerPlay.text)
+   
+
+  </script>
+</body>
+</html>
